@@ -1,3 +1,25 @@
-* {
-  color: blue;
+@import "colours";
+@import "layout";
+@import "buttons";
+@import "blocks";
+
+img {
+  width: 100%;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $grey;
+}
+.site-main {
+  overflow-x: hidden;
+  height: 100vh;
+  min-height: 600px;
+  // min-width: 500px;
+  background-image: url(../assets/background-merged.png);
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
