@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./sass/main.scss";
-import App from "./components/App/App";
+import App from "./components/App";
 import { createStore, combineReducers } from "redux";
 import quizReducer from "./data/reducer/quizReducer";
 import playerReducer from "./data/reducer/playerReducer";

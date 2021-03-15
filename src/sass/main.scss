@@ -1,3 +1,4 @@
+$b-radius:  5px;
 @import "colours";
 @import "layout";
 @import "buttons";
@@ -13,13 +14,20 @@ body {
   padding: 0;
   background-color: $grey;
 }
+
+*{
+  box-sizing: border-box;
+}
+
 .site-main {
   overflow-x: hidden;
   height: 100vh;
   min-height: 600px;
   // min-width: 500px;
-  background-image: url(../assets/background-merged.png);
-  background-position: 50% 0;
+  background-image: url(../assets/background.jpg);
+  background-position: 50% -25px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:  1500px 900px;
 }
+
+

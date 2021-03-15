@@ -1,11 +1,12 @@
 const guessChecker = (state) => {
   const { guess, questions, currentQuestion } = state;
   const q = questions.find((q) => q.id === currentQuestion);
-
-  const result = guess === q.answer;
-  console.log(result);
+  const result = guess === Math.round(q.answer);
+  console.log(Math.round(q.answer));
   return {
     ...state,
+    guess: 0,
+    pass: result,
   };
 };
 

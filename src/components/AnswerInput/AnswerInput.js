@@ -2,8 +2,8 @@ import React from "react";
 
 export default function AnswerInput({ quiz, handleClick, handleSubmit }) {
   return (
-    <div className="wrap-tight">
-      <div className={"block answer-block flex-col"}>
+    <div className={"block answer-block"}>
+      <div className="wrap-tight flex-col">
         <div className={"btns-container"}>
           <button
             disabled={quiz.guess < 1}

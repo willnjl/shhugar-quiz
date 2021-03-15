@@ -2,10 +2,11 @@ import React from "react";
 
 export default function Question({ question }) {
   return (
-    <div>
+    <div className={"question-block"}>
       <p>
         {"Can you guess the number of sugar cubes in this "}
         {question.messages.question}
+        {"?"}
       </p>
     </div>
   );

@@ -1,29 +1,17 @@
+
+@import "blocks/title";
+@import "blocks/item";
+@import "blocks/bottom";
+@import "blocks/result";
+
+
 .block {
-  // border: 5px solid purple;
-  border-radius: 25px;
+  border-radius: $b-radius;
   overflow: hidden;
-  padding: 1rem;
 }
 
-.title-block {
-  text-align: center;
-}
 
-.answer-block {
-  // margin-top: 10rem;
-}
 
-.item {
-  margin: 0 auto;
-  height: 75px;
-  width: 75px;
-  padding: 0;
-  img {
-    height: 100%;
-    object-fit: cover;
-  }
-}
 
-.answer-block {
-  font-size: 3rem;
-}
+
+

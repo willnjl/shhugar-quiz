@@ -1,17 +1,24 @@
+import questions from "../questions";
+
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}
+
+shuffleArray(questions);
+
+let setQuestions = (questions) => {
+  return questions.map((q, i) => {
+    return {
+      ...q,
+      id: i,
+    };
+  });
+};
 export const initialQuiz = {
-  questions: [
-    {
-      id: 0,
-      imgUrl:
-        "https://hips.hearstapps.com/prima.cdnds.net/assets/17/13/1490780833-kitkat.jpg",
-      answer: 0,
-      messages: {
-        question: "jar of pasta sauce",
-        pass: "",
-        fail: "",
-      },
-    },
-  ],
+  questions: setQuestions(questions),
   pass: false,
   guess: 0,
   currentQuestion: 0,
@@ -20,4 +27,5 @@ export const initialQuiz = {
 export const initialPlayer = {
   totalScore: 0,
   scoreSheet: [],
+  hasAnswered: false,
 };

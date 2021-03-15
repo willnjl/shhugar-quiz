@@ -1,0 +1,35 @@
+
+
+.bottom{
+  // border: 1px solid red;
+  margin-top: auto;
+  color: white;
+  // border: 1px solid red;
+  // padding-top: 2rem;
+
+}
+.question-block{
+    font-size: 1.25rem;
+    color: white;
+    font-weight: 600;
+    margin: 0;
+   
+}
+
+
+.answer-block {
+    color: white;
+    font-size: 3rem;
+    button{
+      color: white;
+      font-weight: 900;
+  }
+
+}
+
+
+.asterix{
+  margin-left: auto;
+  font-size: 0.75rem;
+  color: $blue-dark;
+}
