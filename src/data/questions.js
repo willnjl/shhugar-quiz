@@ -1,6 +1,6 @@
 export default [
   {
-    imgUrl: "items/Crisps.png",
+    imgUrl: "items/Crisps-01.png",
     answer: 1,
     messages: {
       question: "packet of crisps",

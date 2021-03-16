@@ -1,18 +1,17 @@
 .result-block{
-    background-color: white;
-    color: $blue-dark;
-    padding: 10px 20px;
-    text-align: center;
-    // height: 250px;
 
     h3{
         font-size: 1.75rem;
         margin: 0;
     }
+    p{
+      margin-bottom: 10px;
+    }
+
 }
 
 .correct-answer{
-  font-size: 2rem;
-  display: block;
-  margin-top: 1rem;
+  font-size: 1.75rem;
+ margin: 0 1rem;
+  // margin-top: 1rem;
 }

@@ -10,6 +10,8 @@ export default (state = initialQuiz, { type, payload }) => {
       return guessChecker(state, payload);
     case "QUIZ.NEXT":
       return { ...state, currentQuestion: currentQuestion + 1 };
+    case "QUIZ.START":
+      return { ...state, inProgress: true, rdi: payload.rdi };
     default:
       return state;
   }

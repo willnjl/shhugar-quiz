@@ -22,6 +22,8 @@ export const initialQuiz = {
   pass: false,
   guess: 0,
   currentQuestion: 0,
+  inProgress: false,
+  rdi: 0,
 };
 
 export const initialPlayer = {

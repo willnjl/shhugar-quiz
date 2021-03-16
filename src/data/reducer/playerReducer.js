@@ -6,6 +6,7 @@ export default (state = initialPlayer, { type, payload }) => {
       return { ...state, hasAnswered: true };
     case "QUIZ.NEXT":
       return { ...state, hasAnswered: false };
+
     default:
       return state;
   }

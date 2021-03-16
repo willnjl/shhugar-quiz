@@ -1,12 +1,17 @@
 
 
 .bottom{
+  height: 200px;
+  overflow: hidden;
   // border: 1px solid red;
   margin-top: auto;
   color: white;
   // border: 1px solid red;
   // padding-top: 2rem;
-
+  p{
+    padding: 0;
+    margin: 0;
+  }
 }
 .question-block{
     font-size: 1.25rem;

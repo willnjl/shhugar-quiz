@@ -9,13 +9,14 @@
   padding: 1rem;
   font-weight: 600;
   font-size: 1.2rem;
+  color: white;
   &:active{
+    outline: none;
      box-shadow: 0px 0px;
     transform: translate(1px, 1px);
   }
 }
 .btn-increment {
-  color: white;
   border: 0;
   font-size: 2rem;
 
@@ -24,12 +25,10 @@
 
 .btn-submit {
   border: 0;
-  box-shadow: 2px 2px #ddd;
+  box-shadow: 2px 2px $blue;
   text-decoration: underline;
   width: 100%;
   background-color: $purple;
-
-
   &:hover{
 
     background-color: $purple-light;
