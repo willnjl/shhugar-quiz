@@ -16,6 +16,12 @@
     transform: translate(1px, 1px);
   }
 }
+
+
+.disabled{
+  opacity: 0.5 ;
+  border: 1px solid red;
+}
 .btn-increment {
   border: 0;
   font-size: 2rem;

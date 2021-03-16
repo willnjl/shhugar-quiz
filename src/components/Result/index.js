@@ -9,6 +9,8 @@ let mapStateToProps = ({ player, quiz }) => ({
 let mapDispatchToProps = (dispatch) => {
   return {
     handleNext: (data) => dispatch({ type: "QUIZ.NEXT", payload: data }),
+    recordScore: (data) =>
+      dispatch({ type: "PLAYER.RECORD_SCORE", payload: data }),
   };
 };
 

@@ -1,6 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
-export default function AnswerInput({ quiz, handleClick, handleSubmit }) {
+export default function AnswerInput({
+  quiz,
+  handleClick,
+  handleSubmit,
+  hasAnswered,
+}) {
+  const [disabled, setDisabled] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setDisabled(false);
+    }, 800);
+  }, []);
+
   return (
     <div className={"block answer-block"}>
       <div className="wrap-tight flex-col">
@@ -21,7 +34,10 @@ export default function AnswerInput({ quiz, handleClick, handleSubmit }) {
             +
           </button>
         </div>
-        <button className={"btn btn-submit"} onClick={() => handleSubmit()}>
+        <button
+          className={`btn btn-submit ${disabled ? "disabled" : ""}`}
+          onClick={() => handleSubmit()}
+        >
           Submit
         </button>
       </div>

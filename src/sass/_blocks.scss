@@ -4,16 +4,18 @@
 @import "blocks/bottom";
 @import "blocks/result";
 @import "blocks/menu";
+@import "blocks/summary";
 
 
 .window{
+
       background-color: white;
     color: $blue-dark;
     padding: 10px 20px;
     text-align: center;
     box-shadow: 3px 3px $green;
-  text-align: center;
-  padding: 1rem
+    text-align: center;
+    padding: 1rem
 }
 
 .block {

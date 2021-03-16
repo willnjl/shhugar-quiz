@@ -10,12 +10,14 @@ function shuffleArray(array) {
 shuffleArray(questions);
 
 let setQuestions = (questions) => {
-  return questions.map((q, i) => {
-    return {
-      ...q,
-      id: i,
-    };
-  });
+  return questions
+    .map((q, i) => {
+      return {
+        ...q,
+        id: i,
+      };
+    })
+    .filter((q, i) => i < 10);
 };
 export const initialQuiz = {
   questions: setQuestions(questions),
@@ -24,10 +26,11 @@ export const initialQuiz = {
   currentQuestion: 0,
   inProgress: false,
   rdi: 0,
+  completed: false,
 };
 
 export const initialPlayer = {
   totalScore: 0,
-  scoreSheet: [],
+  scoreCard: [],
   hasAnswered: false,
 };

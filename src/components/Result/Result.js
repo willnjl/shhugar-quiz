@@ -10,9 +10,16 @@ let setPercentage = (n, rdi) => {
   return ((grams / rdi) * 100).toFixed(1);
 };
 
-export default function Result({ q, quiz, handleNext, hasAnswered }) {
+export default function Result({
+  q,
+  quiz,
+  handleNext,
+  hasAnswered,
+  recordScore,
+}) {
   let handleClick = () => {
     handleNext();
+    recordScore({ q, pass: quiz.pass });
   };
 
   useEffect(() => {
@@ -47,7 +54,7 @@ export default function Result({ q, quiz, handleNext, hasAnswered }) {
           <strong>{setPercentage(q.answer, quiz.rdi).toString()}%</strong> of
           your daily recommended sugar intake
         </p>
-        <button className={"btn btn-next"} onClick={() => handleClick()}>
+        <button className={`btn btn-next`} onClick={() => handleClick()}>
           next question
         </button>
       </div>
