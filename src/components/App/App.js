@@ -1,11 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import TitleBlock from "../TitleBlock";
 import Item from "../Item";
-import AnswerInput from "../AnswerInput";
-import Question from "../Question";
-import Result from "../Result";
+import Bottom from "../Bottom";
 import Menu from "../Menu";
-function App({ quiz, player }) {
+function App() {
   return (
     <main className={"site-main"}>
       <div className="wrap">
@@ -13,16 +11,7 @@ function App({ quiz, player }) {
           <TitleBlock />
           <Menu>
             <Item />
-            <div className={"bottom"}>
-              {player.hasAnswered ? (
-                <Result />
-              ) : (
-                <>
-                  <Question />
-                  <AnswerInput />
-                </>
-              )}
-            </div>
+            <Bottom />
             <span className="asterix">
               *different brands will vary in sugar content, for guidance only
             </span>

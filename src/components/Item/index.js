@@ -1,10 +1,10 @@
 import { connect } from "react-redux";
 import Item from "./Item";
 
-const mapStateToProps = ({ quiz }) => {
-  const { questions, currentQuestion } = quiz;
+let mapStateToProps = ({ quiz }) => {
+  const { currentQuestion, questions } = quiz;
   return {
-    item: questions[currentQuestion],
+    q: questions[currentQuestion],
   };
 };
 

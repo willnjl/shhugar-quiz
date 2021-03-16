@@ -1,17 +1,19 @@
 import React from "react";
 import { gsap } from "gsap";
 
-gsap.to("#item", {
-  rotation: 15,
-  duration: 1,
-  yoyo: true,
-  repeat: -1,
-});
-export default function Item({ item }) {
+export default function Item({ q }) {
+  let rotation = Math.random() + 1 * 4;
+  let tween = gsap.from("#item", {
+    rotate: rotation,
+    scale: 1.5,
+    ease: "bounce",
+    duration: 1.2,
+    yoyo: true,
+  });
   return (
     <div className="wrap-tight">
       <div className="block item">
-        <img src={item.imgUrl} alt="" id={"item"} />
+        <img src={q.imgUrl} alt="" id={"item"} />
       </div>
     </div>
   );
