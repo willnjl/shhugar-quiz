@@ -3,6 +3,8 @@ import TitleBlock from "../TitleBlock";
 import Item from "../Item";
 import Bottom from "../Bottom";
 import Menu from "../Menu";
+import Tail from "../Tail/Tail";
+import Steam from "../Steam/steam";
 import Summary from "../Summary";
 import { gsap } from "gsap";
 function App({ quiz }) {
@@ -24,6 +26,8 @@ function App({ quiz }) {
             </Menu>
           )}
         </div>
+        <Tail />
+        <Steam />
       </div>
     </main>
   );
