@@ -1,0 +1,33 @@
+
+
+.animated-tail{
+    // border: 1px solid red;
+    height: 90px;
+    width: 130px;
+    scale: 0.75;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-225px, 10px) ;
+    z-index: 1;
+}
+.animated-steam{
+    height: 55px;
+    width: 26px;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(125px, -115px) ;
+    z-index: 1;
+ 
+}
+
+@keyframes fadeIn { 
+  from { opacity: 0; } 
+}
+
+.animate-flicker {
+    animation: fadeIn 1.3s infinite alternate;
+}
