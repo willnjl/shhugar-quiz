@@ -14,9 +14,9 @@ export default function Menu({ inProgress, children, handleStart }) {
         You will be asked to guess the amount of sugar cubes in 10 everyday
         foods.
       </p>
-      <div>
+      <div className={"flex-col"}>
         <p>Whats Your Age Range?</p>
-        <ul>
+        <ul style={{ width: "50%" }}>
           <li>
             <input
               type={"radio"}

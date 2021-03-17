@@ -84,7 +84,7 @@ export default [
     imgUrl: "items/Orange-juice-01.png",
     answer: 20,
     messages: {
-      question: "1l carton of orange juice",
+      question: "carton of orange juice",
       pass: "",
       fail: "",
     },
@@ -157,6 +157,24 @@ export default [
     answer: 13.3,
     messages: {
       question: "milk chocate bar",
+      pass: "",
+      fail: "",
+    },
+  },
+  {
+    imgUrl: "items/fruit-smoothie.png",
+    answer: 4.5,
+    messages: {
+      question: "smoothie cup",
+      pass: "",
+      fail: "",
+    },
+  },
+  {
+    imgUrl: "items/chocolate-cereal.png",
+    answer: 2.5,
+    messages: {
+      question: "bowl of chocolate cereal",
       pass: "",
       fail: "",
     },

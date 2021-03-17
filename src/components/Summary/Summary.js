@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
+import tick from "../../assets/tick.jpg";
+import cross from "../../assets/cross.jpg";
 export default function Summary({ player, handleReset }) {
   useEffect(() => {
     let tween = gsap.from(".score", {
@@ -18,6 +20,12 @@ export default function Summary({ player, handleReset }) {
       </h1>
       <div className={"table-container"}>
         <table className={"summary-table"}>
+          <thead>
+            <th scope={"col"}></th>
+            <th scope={"col"}></th>
+            <th scope={"col"}> Sugar Cubes</th>
+            <th scope={"col"}></th>
+          </thead>
           {player.scoreCard.map((q) => {
             return (
               <tr>
@@ -26,8 +34,14 @@ export default function Summary({ player, handleReset }) {
                 </td>
                 <td>{q.messages.question}</td>
 
-                <td>{q.answer}</td>
-                <td>{q.pass ? "✔" : "✗"}</td>
+                <td>{Math.round(+q.answer)}</td>
+                <td>
+                  {q.pass ? (
+                    <img src={tick} className={"mark"} />
+                  ) : (
+                    <img src={cross} className="mark" />
+                  )}
+                </td>
               </tr>
             );
           })}

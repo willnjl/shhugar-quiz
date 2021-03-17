@@ -37,6 +37,7 @@ export default function AnswerInput({
         <button
           className={`btn btn-submit ${disabled ? "disabled" : ""}`}
           onClick={() => handleSubmit()}
+          disabled={disabled}
         >
           Submit
         </button>

@@ -7,6 +7,7 @@ import Tail from "../Tail/Tail";
 import Steam from "../Steam/steam";
 import Summary from "../Summary";
 import { gsap } from "gsap";
+import ClockHands from "../ClockHands/ClockHands";
 function App({ quiz }) {
   const { completed } = quiz;
   return (
@@ -28,6 +29,7 @@ function App({ quiz }) {
         </div>
         <Tail />
         <Steam />
+        <ClockHands />
       </div>
     </main>
   );
