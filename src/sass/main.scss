@@ -1,4 +1,4 @@
-$b-radius:  5px;
+$b-radius: 5px;
 @import "colours";
 @import "layout";
 @import "buttons";
@@ -17,20 +17,18 @@ body {
   background-color: $grey;
 }
 
-
-*{
+* {
   box-sizing: border-box;
 }
 
 .site-main {
+  position: relative;
   overflow-x: hidden;
   height: 100vh;
   min-height: 600px;
-  // min-width: 500px;
+  height: 900px;
   background-image: url(../assets/background.jpg);
   background-position: 50% -25px;
   background-repeat: no-repeat;
-  background-size:  1500px 900px;
+  background-size: 1500px 900px;
 }
-
-

@@ -3,35 +3,35 @@ import TitleBlock from "../TitleBlock";
 import Item from "../Item";
 import Bottom from "../Bottom";
 import Menu from "../Menu";
-import Tail from "../Tail/Tail";
-import Steam from "../Steam/steam";
+import Background from "../Background/Backround";
 import Summary from "../Summary";
 import { gsap } from "gsap";
-import ClockHands from "../ClockHands/ClockHands";
+
 function App({ quiz }) {
   const { completed } = quiz;
   return (
-    <main className={"site-main"}>
-      <div className="wrap">
-        <div className="flex-col game-area ">
-          <TitleBlock />
-          {completed ? (
-            <Summary />
-          ) : (
-            <Menu>
-              <Item />
-              <Bottom />
-              <span className="asterix">
-                *different brands will vary in sugar content, for guidance only
-              </span>
-            </Menu>
-          )}
+    <>
+      <main className={"site-main"}>
+        <Background />
+        <div className="wrap">
+          <div className="flex-col game-area ">
+            <TitleBlock />
+            {completed ? (
+              <Summary />
+            ) : (
+              <Menu>
+                <Item />
+                <Bottom />
+                <span className="asterix">
+                  *different brands will vary in sugar content, for guidance
+                  only
+                </span>
+              </Menu>
+            )}
+          </div>
         </div>
-        <Tail />
-        <Steam />
-        <ClockHands />
-      </div>
-    </main>
+      </main>
+    </>
   );
 }
 
