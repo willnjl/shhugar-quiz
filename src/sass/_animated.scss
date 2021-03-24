@@ -10,6 +10,7 @@
   transform: translate(-225px, -75px);
   z-index: 1;
 }
+
 .animated-steam {
   height: 55px;
   width: 26px;
@@ -34,13 +35,12 @@
 .animated-mins {
   position: absolute;
   width: 22px;
-  // height: 10px;
 
   border-bottom: 3px solid black;
   top: 50%;
   left: 50%;
   transform-origin: left center;
-  transform: translate(402px, -195px);
+  transform: translate(402px, -195px) rotate(-15deg);
 }
 .animated-hours {
   position: absolute;
@@ -65,11 +65,11 @@
   background: chocolate;
   position: absolute;
   border-radius: 100%;
-  width: 2px;
-  height: 2px;
+  width: 7px;
+  height: 7px;
   top: 50%;
   left: 50%;
   transform-origin: center;
-  transform: translate(402px, -195px);
+  transform: translate(400px, -197px);
   z-index: 9999;
 }
