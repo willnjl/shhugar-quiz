@@ -10,6 +10,7 @@
 
 # production
 /build
+/sugar-quiz
 
 # misc
 .DS_Store
