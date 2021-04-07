@@ -37,9 +37,9 @@ export default function Summary({ player, handleReset }) {
                 <td>{Math.round(+q.answer)}</td>
                 <td>
                   {q.pass ? (
-                    <img src={tick} className={"mark"} />
+                    <img src={tick} className={"mark"} alt="tick" />
                   ) : (
-                    <img src={cross} className="mark" />
+                    <img src={cross} className="mark" alt="tick" />
                   )}
                 </td>
               </tr>

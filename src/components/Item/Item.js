@@ -1,6 +1,5 @@
-import React, { useEffect, useLayoutEffect, useState } from "react";
+import React, { useLayoutEffect, useState } from "react";
 import { gsap } from "gsap";
-import { Transition } from "react-transition-group";
 
 export default function Item({ q }) {
   const [loaded, setLoaded] = useState(false);

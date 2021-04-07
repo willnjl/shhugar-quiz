@@ -2,20 +2,18 @@ import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
 import { gsap } from "gsap";
 
-const ClockHands = ({ hasAnswered }) => {
-  const [hands, setHands] = useState({
+const ClockHands = () => {
+  const [hands] = useState({
     1: false,
     2: false,
     3: false,
   });
   let handleHover = (tween, id) => {
-    console.log(hands);
     if (!hands[id]) {
       tween.restart();
       tween.play();
       hands[id] = true;
       tween.eventCallback("onComplete", () => {
-        console.log("callback");
         hands[id] = false;
       });
     }
@@ -23,6 +21,7 @@ const ClockHands = ({ hasAnswered }) => {
   let tween1 = gsap.timeline();
   let tween2 = gsap.timeline();
   let tween3 = gsap.timeline();
+
   useEffect(() => {
     tween1.to(".animated-secs", {
       rotate: 360,
