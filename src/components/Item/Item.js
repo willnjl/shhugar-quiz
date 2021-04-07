@@ -1,18 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useLayoutEffect, useState } from "react";
 import { gsap } from "gsap";
+import { Transition } from "react-transition-group";
 
 export default function Item({ q }) {
   const [loaded, setLoaded] = useState(false);
-  useEffect(() => {
-    console.log(loaded);
+  useLayoutEffect(() => {
+    setLoaded(false);
   }, [q]);
 
   const onLoad = () => {
-    console.log({ url: q.imgUrl });
-    let rotation = Math.random() + 1 * 5;
+    let rotate = Math.random() * 50;
     setLoaded(true);
     let tween = gsap.from("#item", {
-      rotate: rotation,
+      rotate,
       scale: 1.5,
       ease: "bounce",
       duration: 1.2,
@@ -24,10 +24,10 @@ export default function Item({ q }) {
       <div className="block item">
         <img
           src={q.imgUrl}
-          alt=""
+          alt={q.messages.question}
           id={"item"}
           onLoad={() => onLoad()}
-          style={!loaded ? { display: "none" } : {}}
+          style={!loaded ? { opacity: 0 } : {}}
         />
       </div>
       {!loaded && (

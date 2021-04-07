@@ -1,39 +1,39 @@
+.bottom {
+  position: relative;
 
-
-.bottom{
-  height: 200px;
   overflow: hidden;
   // border: 1px solid red;
   margin-top: auto;
   color: white;
   // border: 1px solid red;
   // padding-top: 2rem;
-  p{
+  p {
     padding: 0;
     margin: 0;
   }
+  z-index: 9999;
 }
-.question-block{
-    font-size: 1.25rem;
-    color: white;
-    font-weight: 400;
-    margin: 0;
-   
+.question-block {
+  background: #00000055;
+  padding: 1rem;
+  border-radius: $b-radius;
+  font-size: 1.25rem;
+  color: white;
+  font-weight: 400;
+  margin: 0;
 }
-
 
 .answer-block {
+  color: white;
+  font-size: 3rem;
+  overflow-y: scroll;
+  button {
     color: white;
-    font-size: 3rem;
-    button{
-      color: white;
-      font-weight: 900;
+    font-weight: 900;
   }
-
 }
 
-
-.asterix{
+.asterix {
   margin-left: auto;
   font-size: 0.75rem;
   color: $blue-dark;

@@ -3,43 +3,41 @@ import { connect } from "react-redux";
 import { gsap } from "gsap";
 
 const ClockHands = ({ hasAnswered }) => {
-  let handleHover = (tween, id) => {
-    if (!hands[id]) {
-      tween.restart();
-      hands[id] = true;
-      tween.eventCallback("onComplete", () => {
-        hands[id] = false;
-      });
-    }
-  };
   const [hands, setHands] = useState({
     1: false,
     2: false,
     3: false,
   });
-  let tween1;
-  let tween2;
-  let tween3;
+  let handleHover = (tween, id) => {
+    console.log(hands);
+    if (!hands[id]) {
+      tween.restart();
+      tween.play();
+      hands[id] = true;
+      tween.eventCallback("onComplete", () => {
+        console.log("callback");
+        hands[id] = false;
+      });
+    }
+  };
+  let tween1 = gsap.timeline();
+  let tween2 = gsap.timeline();
+  let tween3 = gsap.timeline();
   useEffect(() => {
-    tween1 = gsap
-      .to(".animated-secs", {
-        rotate: 360,
-        duration: 7,
-      })
-      .pause();
-    tween2 = gsap
-      .to(".animated-mins", {
-        rotate: 360,
-        duration: 2,
-      })
-      .pause();
+    tween1.to(".animated-secs", {
+      rotate: 360,
+      duration: 7,
+    });
 
-    tween3 = gsap
-      .to(".animated-hours", {
-        rotate: 360,
-        duration: 4,
-      })
-      .pause();
+    tween2.to(".animated-mins", {
+      rotate: 360,
+      duration: 2,
+    });
+
+    tween3.to(".animated-hours", {
+      rotate: 360,
+      duration: 4,
+    });
   }, []);
   return (
     <>

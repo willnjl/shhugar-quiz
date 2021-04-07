@@ -1,19 +1,18 @@
-.score{
-    display: inline-block;
+.score {
+  display: inline-block;
 }
 
-.summary-icon{
-    max-width: 50px;
+.summary-icon {
+  max-width: 50px;
 }
 
-
-.table-container{
-    max-height: 250px;
-    overflow-y: scroll;
+.table-container {
+  max-height: 250px;
+  overflow-y: scroll;
 }
-.summary-table{
-.mark{
+.summary-table {
+  .mark {
     width: 12px;
     height: 12px;
-}
+  }
 }

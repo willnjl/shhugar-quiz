@@ -4,8 +4,7 @@ export default [
     answer: 1,
     messages: {
       question: "packet of crisps",
-      pass: "",
-      fail: "",
+      size: "100g",
     },
   },
   {
@@ -13,8 +12,7 @@ export default [
     answer: 31.5,
     messages: {
       question: "box of Cheerios",
-      pass: "",
-      fail: "",
+      size: "600g",
     },
   },
   {
@@ -22,8 +20,7 @@ export default [
     answer: 4.3,
     messages: {
       question: "tin of baked beans",
-      pass: "",
-      fail: "",
+      size: "400g",
     },
   },
   {
@@ -31,8 +28,7 @@ export default [
     answer: 13.3,
     messages: {
       question: "can of coke",
-      pass: "",
-      fail: "",
+      size: "500ml",
     },
   },
   {
@@ -40,8 +36,7 @@ export default [
     answer: 4.7,
     messages: {
       question: "cup of coffee",
-      pass: "",
-      fail: "",
+      size: "220g",
     },
   },
   {
@@ -49,8 +44,7 @@ export default [
     answer: 8.6,
     messages: {
       question: "flavoured water",
-      pass: "",
-      fail: "",
+      size: "750ml",
     },
   },
   {
@@ -58,8 +52,7 @@ export default [
     answer: 6.9,
     messages: {
       question: "fruit smoothie",
-      pass: "",
-      fail: "",
+      size: "250ml",
     },
   },
   {
@@ -67,8 +60,7 @@ export default [
     answer: 5.7,
     messages: {
       question: "tin of tomato soup",
-      pass: "",
-      fail: "",
+      size: "680g",
     },
   },
   {
@@ -76,8 +68,7 @@ export default [
     answer: 6.9,
     messages: {
       question: "energy drink",
-      pass: "",
-      fail: "",
+      size: "250ml",
     },
   },
   {
@@ -85,8 +76,7 @@ export default [
     answer: 20,
     messages: {
       question: "carton of orange juice",
-      pass: "",
-      fail: "",
+      size: "1l",
     },
   },
   {
@@ -94,8 +84,7 @@ export default [
     answer: 0,
     messages: {
       question: "bottle of orange squash",
-      pass: "",
-      fail: "",
+      size: "1l",
     },
   },
   {
@@ -103,8 +92,7 @@ export default [
     answer: 2.3,
     messages: {
       question: "bottle of Mayonnaise",
-      pass: "",
-      fail: "",
+      size: "400g",
     },
   },
   {
@@ -112,8 +100,7 @@ export default [
     answer: 33.2,
     messages: {
       question: "Tomato Ketchup",
-      pass: "",
-      fail: "",
+      size: "680g",
     },
   },
   {
@@ -121,8 +108,7 @@ export default [
     answer: 2,
     messages: {
       question: "box of pasta",
-      pass: "",
-      fail: "",
+      size: "500g",
     },
   },
   {
@@ -130,8 +116,7 @@ export default [
     answer: 0.3,
     messages: {
       question: "Rice pouch",
-      pass: "",
-      fail: "",
+      size: "250g",
     },
   },
   {
@@ -139,8 +124,7 @@ export default [
     answer: 7.1,
     messages: {
       question: "breakfast biscuits",
-      pass: "",
-      fail: "",
+      size: "160g",
     },
   },
   {
@@ -148,8 +132,7 @@ export default [
     answer: 14,
     messages: {
       question: "milk chocate bites bag",
-      pass: "",
-      fail: "",
+      size: "110g",
     },
   },
   {
@@ -157,17 +140,15 @@ export default [
     answer: 13.3,
     messages: {
       question: "milk chocate bar",
-      pass: "",
-      fail: "",
+      size: "95g",
     },
   },
   {
     imgUrl: "items/fruit-smoothie.png",
     answer: 4.5,
     messages: {
-      question: "smoothie cup",
-      pass: "",
-      fail: "",
+      question: "berry smoothie",
+      size: "360ml",
     },
   },
   {
@@ -175,8 +156,7 @@ export default [
     answer: 2.5,
     messages: {
       question: "bowl of chocolate cereal",
-      pass: "",
-      fail: "",
+      size: "30g",
     },
   },
 ];
