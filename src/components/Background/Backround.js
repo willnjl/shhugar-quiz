@@ -7,7 +7,7 @@ const Backround = () => {
   return (
     <>
       <div className={"background"}>
-        <div classname="background-overlay">
+        <div className="background-overlay">
           <Tail />
           <Steam />
           <ClockHands />

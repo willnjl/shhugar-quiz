@@ -47,7 +47,7 @@ export default function Summary({ player, handleReset }) {
           })}
         </table>
       </div>
-      <button class={"btn btn-submit"} onClick={handleReset}>
+      <button className={"btn btn-submit"} onClick={handleReset}>
         play again
       </button>
     </div>

@@ -43,7 +43,7 @@ export default [
     imgUrl: "items/Strawberry-water-01.png",
     answer: 8.6,
     messages: {
-      question: "flavoured water",
+      question: "bottle of flavoured water",
       size: "750ml",
     },
   },
@@ -123,7 +123,7 @@ export default [
     imgUrl: "items/Breakfast-biscuits-01.png",
     answer: 7.1,
     messages: {
-      question: "breakfast biscuits",
+      question: "bag of breakfast biscuits",
       size: "160g",
     },
   },
